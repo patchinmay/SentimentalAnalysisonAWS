@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Sentimental Analysis</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="./app.js"></script>
+    <link rel="stylesheet" href="/form.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 " id="form_container">
+                <h2 style="text-align: center;">Sentimental Analysis</h2>
+                <p> Hey! Lets start with uploading our audio file to s3 </p>
+                <form method="post" enctype="multipart/form-data" action="/upload">
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="title"> Title:</label>
+                            <input type="text" class="form-control" name="title" id="title" placeholder="optional" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <label for="upl"> Please upload your recording:</label>
+                            <input type="file" name="upl" class="form-control" />
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-sm-12 form-group">
+                            <button type="submit" class="btn btn-lg btn-default pull-right">Submit &rarr;</button>
+                        </div>
+                    </div>
+                </form>
+                <form method="GET" action="/results">
+                    <button type="submit" class="btn btn-lg btn-default pull-right">Results &rarr;</button>
+
+                </form>
+
+
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

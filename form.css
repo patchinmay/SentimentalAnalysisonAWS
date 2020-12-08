@@ -1,0 +1,29 @@
+#form_container {
+    padding: 15px 15px;
+    margin-top: 250px;
+    margin-left: 300px;
+    align-content: center;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+}
+
+body {
+    background-color: #000;
+    background-image: url("./images/sentiment-analysis-Featured-1024x576.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.upload-btn-wrapper {
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.upload-btn-wrapper input[type=file] {
+    font-size: 100px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 0;
+}
